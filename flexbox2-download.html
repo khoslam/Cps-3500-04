@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Flexbox: Task 2</title>
+
+    <style>
+      body {
+        background-color: #fff;
+        color: white;
+        font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+        padding: 1em;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+      }
+
+      article {
+        padding: 15px;
+        margin: 15px;
+        background: #4d7298;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        flex: 0 0 calc(33.33% - 30px);
+        box-sizing: border-box;
+      }
+
+      section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: stretch;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <section>
+      <article>
+        <p>I am small</p>
+      </article>
+
+      <article>
+         <p>I have more content than the very small item.</p></article>
+
+      <article>
+        <p>I have lots of content. So much content that I don't know where it is
+        all going to go. I'm glad that CSS is pretty good at dealing with
+        situations where we end up with more words than expected!</p>
+      </article>
+    </section>
+  </body>
+</html>
